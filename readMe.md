@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of JavaScript</h1>
+  <h1> JavaScript30天挑战</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,56 +7,56 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>作者:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
   <small> January, 2020</small>
   </sub>
 </div>
 
-[Day 2 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
+[第二天 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
 
-![Thirty Days Of JavaScript](./images/day_1_1.png)
+![JavaScript30天挑战](./images/day_1_1.png)
 
-- [📔Day 1](#%f0%9f%93%94day-1)
-  - [Introduction](#introduction)
-  - [Requirements](#requirements)
-  - [Setup](#setup)
-    - [Install Node.js](#install-nodejs)
-    - [Browser](#browser)
-      - [Installing Google Chrome](#installing-google-chrome)
-      - [Opening Google Chrome Console](#opening-google-chrome-console)
-      - [Writing Code on browser Console](#writing-code-on-browser-console)
-        - [Console.log](#consolelog)
-        - [Console.log with multiple arguments](#consolelog-with-multiple-arguments)
-        - [Comment](#comment)
-        - [Syntax](#syntax)
-      - [Arithmetics](#arithmetics)
-    - [Code Editor](#code-editor)
-      - [Installing Visual Studio Code](#installing-visual-studio-code)
-      - [How to use visual studio code](#how-to-use-visual-studio-code)
-  - [Adding JavaScript to a web page](#adding-javascript-to-a-web-page)
-    - [Inline Script](#inline-script)
-    - [Internal script](#internal-script)
-    - [External script](#external-script)
-    - [Multiple External scripts](#multiple-external-scripts)
-  - [Introduction to Data types](#introduction-to-data-types)
+- [📔第一天](#%f0%9f%93%94day-1)
+  - [简介](#introduction)
+  - [开始前准备](#requirements)
+  - [开始](#setup)
+    - [安装 Node.js](#install-nodejs)
+    - [浏览器](#browser)
+      - [安装 Google Chrome](#installing-google-chrome)
+      - [打开 Google Chrome 终端](#opening-google-chrome-console)
+      - [使用浏览器终端编写代码](#writing-code-on-browser-console)
+        - [使用Console.log](#consolelog)
+        - [Console.log 使用多个参数](#consolelog-with-multiple-arguments)
+        - [注释](#comment)
+        - [语法](#syntax)
+      - [算术运算]](#arithmetics)
+    - [代码编辑器](#code-editor)
+      - [安装 Visual Studio Code](#installing-visual-studio-code)
+      - [使用Visual Studio Code](#how-to-use-visual-studio-code)
+  - [将JavaScript添加到Web页面](#adding-javascript-to-a-web-page)
+    - [内部脚本](#inline-script)
+    - [内部脚本](#internal-script)
+    - [外部脚本]](#external-script)
+    - [多外部脚本](#multiple-external-scripts)
+  - [数据类型介绍](#introduction-to-data-types)
     - [Number](#number)
     - [String](#string)
     - [Booleans](#booleans)
     - [Undefined](#undefined)
     - [Null](#null)
-  - [Checking Data types](#checking-data-types)
-  - [Comments](#comments)
-  - [Variables](#variables)
-- [💻 Day 1: Exercises](#%f0%9f%92%bb-day-1-exercises)
+  - [检查数据类型](#checking-data-types)
+  - [注释](#comments)
+  - [变量]](#variables)
+- [💻 第一天练习](#%f0%9f%92%bb-day-1-exercises)
 
-# 📔Day 1
+# 📔第一天
 
-## Introduction
+## 简介
 
-**Congratulations** for deciding to participate in a 30 days of JavaScript programming challenge . In this challenge you will learn everything you need to be a JavaScript programmer and in general the whole concepts of programming. In the end of the challenge you will get a 30DaysOfJavaScript programming challenge certificate. Join the [telegram group](https://t.me/ThirtyDaysOfJavaScript).
+很荣幸你能加入JavaScript30天编程挑战，在这项挑战中你将会学到一名JavaScript程序员所必备的全部技能以及编程概念。加入[telegram 群组](https://t.me/ThirtyDaysOfJavaScript) 在这项挑战的最后你将有机会获得30DaysOfJavaScript 编程挑战的证书，
 
-**A 30DaysOfJavaScript** challenge is a guide for both beginners and advanced JavaScript developers. Welcome to JavaScript. I enjoy using and teaching JavaScript and I hope you will do so. JavaScript is the language of the browser.
+**30DaysOfJavaScript 挑战** 是一份面向初学者和高级JavaScript开发人员的指南。欢迎大家使用JavaScript，这门浏览器语言，我本人喜欢使用和教授JavaScript，我希望大家也和我一样能够喜欢上JavaScript。
 
 In this step by step tutorial, you will learn JavaScript, the most popular programming language in the history of mankind.
 You use JavaScript **_to add interactivity to websites, to develop mobile apps, desktop applications, games_** and nowadays JavaScript can be used for **_machine learning_** and **_AI_**.
