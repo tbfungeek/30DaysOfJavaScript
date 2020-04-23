@@ -72,7 +72,7 @@
 
 ## 开始挑战
 
-我相信你有很强的学习动力并且有像成为一个开发人员的强烈欲望，只要您有一台能上网的电脑就够了。
+我相信你有很强的学习动力并且拥有想成为一名开发人员的强烈欲望，只要您有一台能上网的电脑就够了。
 
 ### 安装 Node.js
 
@@ -93,14 +93,13 @@ v12.14.0
 
 这里我个人使用推荐的node版本 12.14.0。
 
-### Browser
+### 浏览器
 
-There are many browsers out there. However, I strongly recommend Google Chrome.
+目前有很多浏览器，但我个人推荐Google Chrome浏览器。
 
-#### Installing Google Chrome
+#### 安装 Google Chrome
 
-Install [google chrome](https://www.google.com/chrome/) if you do not have one yet. We can write small JavaScript code on the browser console, but we do not use the browser console to develop applications.
-
+如果你还没有安装[Google Chrome](https://www.google.com/chrome/)，那么在开始前必须先安装下. 我们可以使用Google Chrome 的 console 来编写简短的代码，但是如果要开发应用我们一般不会使用它，而是使用专门的代码编辑器。
 ![Google Chrome](images/google_chrome.png)
 
 #### Opening Google Chrome Console
