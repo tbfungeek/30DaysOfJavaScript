@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> JavaScript30天挑战</h1>
+  <h1> JavaScript 30天挑战</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -58,9 +58,7 @@
 
 **30DaysOfJavaScript 挑战** 是一份面向初学者和高级JavaScript开发人员的指南。欢迎大家使用JavaScript，这门浏览器语言，我本人喜欢使用和教授JavaScript，我希望大家也和我一样能够喜欢上JavaScript。
 
-通过这个循序渐进的教程，您将学会JavaScript，这门人类历史上最流行的编程语言。您可以使用JavaScript为你的网站添加交互，可以通过JavaScript来开发移动app，桌面应用，游戏等。现在JavaScript还能用于 **机器学习** 和 **_AI_**
-
-You use JavaScript **_to add interactivity to websites, to develop mobile apps, desktop applications, games_** and nowadays JavaScript can be used for **_machine learning_** and **_AI_**. 近年来，JavaScript越来越流行，并且连续四年一直处于编程语言领先地位是Github上最常用的编程语言。
+通过这个循序渐进的教程，您将学会JavaScript，这门人类历史上最流行的编程语言。您可以使用JavaScript为你的网站添加交互，可以通过JavaScript来开发移动app，桌面应用，游戏等。现在JavaScript还能用于 **机器学习** 和 **_AI_**.近年来，JavaScript越来越流行，并且连续四年一直处于编程语言领先地位是Github上最常用的编程语言。
 
 ## Requirements
 
