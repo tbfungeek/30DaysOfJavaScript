@@ -30,14 +30,14 @@
         - [Console.log 使用多个参数](#consolelog-with-multiple-arguments)
         - [注释](#comment)
         - [语法](#syntax)
-      - [算术运算]](#arithmetics)
+      - [算术运算](#arithmetics)
     - [代码编辑器](#code-editor)
       - [安装 Visual Studio Code](#installing-visual-studio-code)
       - [使用Visual Studio Code](#how-to-use-visual-studio-code)
   - [将JavaScript添加到Web页面](#adding-javascript-to-a-web-page)
     - [内部脚本](#inline-script)
     - [内部脚本](#internal-script)
-    - [外部脚本]](#external-script)
+    - [外部脚本](#external-script)
     - [多外部脚本](#multiple-external-scripts)
   - [数据类型介绍](#introduction-to-data-types)
     - [Number](#number)
@@ -47,7 +47,7 @@
     - [Null](#null)
   - [检查数据类型](#checking-data-types)
   - [注释](#comments)
-  - [变量]](#variables)
+  - [变量](#variables)
 - [💻 第一天练习](#%f0%9f%92%bb-day-1-exercises)
 
 # 📔第一天
@@ -58,11 +58,9 @@
 
 **30DaysOfJavaScript 挑战** 是一份面向初学者和高级JavaScript开发人员的指南。欢迎大家使用JavaScript，这门浏览器语言，我本人喜欢使用和教授JavaScript，我希望大家也和我一样能够喜欢上JavaScript。
 
-In this step by step tutorial, you will learn JavaScript, the most popular programming language in the history of mankind.
-You use JavaScript **_to add interactivity to websites, to develop mobile apps, desktop applications, games_** and nowadays JavaScript can be used for **_machine learning_** and **_AI_**.
-**_JavaScript (JS)_** has increased in popularity in recent years and has been the leading
-programming language for four consecutive years and is the most used programming language on
-Github.
+通过这个循序渐进的教程，您将学会JavaScript，这门人类历史上最流行的编程语言。您可以使用JavaScript为你的网站添加交互，可以通过JavaScript来开发移动app，桌面应用，游戏等。现在JavaScript还能用于 **机器学习** 和 **_AI_**
+
+You use JavaScript **_to add interactivity to websites, to develop mobile apps, desktop applications, games_** and nowadays JavaScript can be used for **_machine learning_** and **_AI_**. 近年来，JavaScript越来越流行，并且连续四年一直处于编程语言领先地位是Github上最常用的编程语言。
 
 ## Requirements
 
