@@ -60,38 +60,38 @@
 
 通过这个循序渐进的教程，您将学会JavaScript，这门人类历史上最流行的编程语言。您可以使用JavaScript为你的网站添加交互，可以通过JavaScript来开发移动app，桌面应用，游戏等。现在JavaScript还能用于 **机器学习** 和 **_AI_**.近年来，JavaScript越来越流行，并且连续四年一直处于编程语言领先地位是Github上最常用的编程语言。
 
-## Requirements
+## 开始前准备
 
-No prior knowledge of programming is required to follow this challenge. You need only:
+在这项挑战之前你不需要准备任何等前置知识，你仅仅需要：
 
-1. Motivation
-2. Computer
-3. Internet
-4. Browser
-5. Code Editor
+1. 学习动机
+2. 计算机
+3. 网络
+4. 浏览器
+5. 代码编辑器
 
-## Setup
+## 开始挑战
 
-I believe you have the motivation and a strong desire to be a developer, computer and Internet. If you have those, then you have everything.
+我相信你有很强的学习动力并且有像成为一个开发人员的强烈欲望，只要您有一台能上网的电脑就够了。
 
-### Install Node.js
+### 安装 Node.js
 
-You may not need it right now but you may need it for later. Install [node.js](https://nodejs.org/en/).
+获取你现在不会立刻使用它，但是在后续您会使用到的，安装 [node.js](https://nodejs.org/en/).
 
-![Node download](images/download_node.png)
+![下载Node](images/download_node.png)
 
-After downloading double click and install
+在下载后可以双击它安装
 
- ![Install node](images/install_node.png)
+ ![安装 node](images/install_node.png)
 
-We can check if node is installed in our local machine by opening our device terminal or command  prompt.
+我们可以通过打开我们设备的终端，或者其他命令行工具敲下如下命令来检查是否已经成功安装到我们本地的机器上。
 
 ```sh
 asabeneh $ node -v
 v12.14.0
 ```
 
-I am using node version 12.14.0, which is the recommended version of node.
+这里我个人使用推荐的node版本 12.14.0。
 
 ### Browser
 
