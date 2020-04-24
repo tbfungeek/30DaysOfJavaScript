@@ -102,32 +102,34 @@ v12.14.0
 如果你还没有安装[Google Chrome](https://www.google.com/chrome/)，那么在开始前必须先安装下. 我们可以使用Google Chrome 的 console 来编写简短的代码，但是如果要开发应用我们一般不会使用它，而是使用专门的代码编辑器。
 ![Google Chrome](images/google_chrome.png)
 
-#### Opening Google Chrome Console
+#### 打开 Google Chrome Console
 
-You can open Google Chrome either by clicking three dots at the top right corner of the Chrome browser or using a shortcut. I prefer using shortcuts.
+你可以通过点击Google Chrome 浏览器右上角的三个点按钮，或者通过快捷键打开Google Chrome Console。个人偏向使用快捷键方式。
 
 ![Opening chrome](images/opening_developer_tool.png)
 
-To open the Chrome console using a short cut.
+通过快捷键打开Chrome Console
 
 ```sh
-Mac
+Mac 环境下
 Command+Option+I
 
-Windows:
+Windows 环境下:
 Ctl+Shift+I
 ```
 
 ![Opening console](images/opening_chrome_console_shortcut.png)
 
-After you open the Google Chrome console, try to explore the marked buttons. We will spend most of the time on the Console part. The Console is the place where your JavaScript code goes. The Google Console V8 engine changes your JavaScript code to machine code.
-Let us write a JavaScript code on the Google Chrome console:
+打开Google Chrome终端后，大家可以尝试各个主要的功能，后续我们将会花费很多时间在Console上练习。我们会在控制台输入我们的代码, Google Console V8引擎会将我们的JavaScript代码转换为机器代码。
+
+让我们尝试在Google Chrome console 输入JavaScript代码：
 
 ![write code on console](./images/js_code_on_chrome_console.png)
 
-#### Writing Code on browser Console
+#### 在浏览器终端编写代码
 
-We can write any JavaScript code on the Google console or any browser console. However, for this challenge, we only focus on Google Chrome console. Open the console using:
+我们可以在Google console 或者其他任意的浏览器终端编写JavaScript代码。但是这个挑战中我们重点使用Google Chrome console。可以通过下面的方式打开Google Chrome console。
+
 
 ```sh
 Mac
@@ -139,15 +141,15 @@ Ctl+Shift+I
 
 ##### Console.log
 
-To write our first JavaScript code, we used a builtin function **console.log()**. We passed an argument as input data, and the function displays the output. We passed 'Hello, World' as input data or argument in the console.log() function.
+我们首先使用一个内置的方法 **console.log()**来编写我们的第一个JavaScript代码。我们传递一个参数作为输入数据，然后 **console.log()** 方法显示输出结果。下面的例子中我们传递'Hello, World' 作为输入数据或者console.log()的参数。
 
 ```js
 console.log('Hello, World!')
 ```
 
-##### Console.log with multiple arguments
+##### 多参数 Console.log 
 
-The console.log(param1, param2, param3), can take multiple arguments.
+console.log(param1, param2, param3)可以传入多个参数:
 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
@@ -157,21 +159,19 @@ console.log('HAPPY', 'NEW', 'YEAR', 2020)
 console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
 ```
 
-As you can see from the above snippet code, *console.log()* can take multiple arguments.
+正如上面的代码片段所示， *console.log()* 可以携带多个参数。 恭喜你，已经学会用*console.log()*写你的第一行JavaScript代码了。
 
-Congratulations! You wrote your first JavaScript code using *console.log()*.
+##### 注释
 
-##### Comment
+注释对于提高代码的可读性有很大帮助，JavaScript不会执行代码的注释部分，在JavaScript中，任何使用//开头或者被/* */包裹的内容都会被作为代码注释。
 
-We add comments to our code. Comments are very important to make code more readable and to leave remarks in our code. JavaScript does not execute the comment part of our code. Any text starts with // in JavaScript is a comment or anything enclose like this /* */ is a comment.
-
-**Example: Single Line Comment**
+** 例子: 单行注释**
 
  // This is the first comment  
  // This is the second comment  
  // I am a single line comment  
 
-**Example: Multiline Comment**
+**例子: 多行注释**
 
   /*
   This is a multiline comment  
@@ -179,21 +179,25 @@ We add comments to our code. Comments are very important to make code more reada
   JavaScript is the language of the web  
   */
 
-##### Syntax
+##### 句法
 
-JavaScript is a programming language. As a result, it has its syntax like other programming languages. If we do not write a syntax that JavaScript understands, it will raise different types of errors. We will explore different kinds of JavaScript errors later. For now, let us see syntax errors.
+JavaScript是一种编程语言。它和其他编程语言一样有自己的语法。如果我们编写的JavaScript语法没有符合语法要求，将引发不同类型的错误。稍后我们将探讨各种JavaScript错误。现在让我们看看语法错误。
+
 
 ![Error](images/raising_syntax_error.png)
 
-I made a deliberate mistake. As a result, the console raises a syntax error. Actually, the syntax is very informative. It informs what type of mistake we made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
+
+上面的代码中我制造了一个错误来作为例子。控制台相应触发了语法错误，并给出了错误提示信息，这些错误提示信息非常有用。它告知我们犯了哪种类型的错误。通过阅读错误反馈信息，我们可以快速定位到问题通过调试更正语法并解决问题。
+
 
 ```js
 console.log("Hello, World!")
 console.log('Hello, World!')
 ```
 
-So far, we saw how to display text using a *console.log()*. If we are printing text or string using *console.log()*, the text has to be under the single, double, or backtick.
-**Example:**
+到目前为止我们学会了如何使用*console.log()*，如果我们要输出文本或者字符串需要将文本或者字符串使用单引号，双引号或者反双引号括起来。
+
+**例子:**
 
 ```js
 console.log("Hello, World!")
@@ -201,10 +205,10 @@ console.log('Hello, World!')
 console.log(`Hello, World!`)
 ```
 
-#### Arithmetics
+#### 运算
 
-Now, let us practice more writing JavaScript codes using *console.log()* on google chrome console for number data types.
-In addition to the text, we can also do mathematical calculations using JavaScript. Let us do the following simple calculations.
+接下来让我们使用*console.log()*在google chrome 终端中编写更多的JavaScript代码。除了输出文本之外我们还可以使用JavaScript来做算术运算。让我们来尝试做下面的简单计算。
+
 
 ![Arithmetic](images/arithmetic.png)
 
