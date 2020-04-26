@@ -221,21 +221,21 @@ console.log(3 % 2)   // Modulus - finding remainder
 console.log(3 ** 2)  // Exponential
 ```
 
-### Code Editor
+### 代码编辑器
 
-We can write our codes on the browser console, but it won't be for bigger projects. In a real working environment, developers use different code editors to write their codes. In this 30 days python JavaScript challenge, we will use visual studio code.
+虽然我们可以使用浏览器的console来编写代码，但是这种方式不适合大的工程，在现实开发环境中，开发者一般使用不同的代码编辑器来编写代码。在我们30天JavaScript挑战中我们推荐使用visual studio code。
 
-#### Installing Visual Studio Code
+#### 安装Visual studio code 
 
-VVisual studio code is a very popular open-source text editor.  I would recommend to [download](https://code.visualstudio.com/) visual studio code, but if you are in favor of other editors, feel free to follow with what you have.
+Visual studio code 是一个非常受欢迎的开源文本编辑器，个人推荐大家下载使用 Visual studio code [download](https://code.visualstudio.com/)作为编辑器，但是如果你有自己喜欢的编辑器，大家可以根据自己的意愿来选择。 
 
 ![Vscode](images/vscode.png)
 
-If you installed visual studio code, let us start using it.
+如果你安装了visual studio code，就开始使用它吧。
 
-#### How to use visual studio code
+#### 如何使用 visual studio code
 
-Open the visual studio code by double-clicking the visual studio icon. When you open it, you will get this kind of interface. Try to interact with the labeled icons.
+双击打开visual studio code，当我们打开后我们可以看到下面的界面。大家可以尝试点击这些按钮来体验这些功能。
 
 ![Vscode ui](./images/vscode_ui.png)
 
@@ -249,19 +249,21 @@ Open the visual studio code by double-clicking the visual studio icon. When you 
 
 ![coding running](./images/launched_on_new_tab.png)
 
-## Adding JavaScript to a web page
+## 往Web页面中添加JavaScript
 
-JavaScript can be added to a web page in three different ways:
-- **_Inline script_**
-- **_Internal script_**
-- **_External script_**
-- **_Multiple External scripts_**
+JavaScript 可以通过如下三种方式添加到网页上:
 
-The following sections show different ways of adding JavaScript code to your web page.
+- **_内联脚本_**
+- **_内置脚本_**
+- **_外部脚本_**
+- **_多外部脚本_**
 
-### Inline Script
+接下来的部分将展示往网页中添加JavaScript代码的不同方式：
 
-Create a folder on your desktop and  call it 30DaysOfJS or in any location and create an **_index.html_** file in the project folder. Then paste the following code and open it in a browser, either in [Chrome](https://www.google.com/chrome/).
+### 内联脚本
+
+在桌面或者任意地方创建一个30DaysOfJS的文件夹，在新创建的项目文件夹下新建一个**_index.html_** 文件。然后将下面的代码粘贴到文件上。使用浏览器打开。
+[Chrome](https://www.google.com/chrome/).
 
 ```html
 <!DOCTYPE html>
@@ -275,12 +277,11 @@ Create a folder on your desktop and  call it 30DaysOfJS or in any location and c
   </html>
 ```
 
-Now, you wrote your first inline script. We can create a pop up alert message using the built-in *alert()* function.
+现在你可以往上面代码中添加第一个内联脚本。我们可以使用内置的 *alert()*方法 创建一个弹出的警告消息。
 
-### Internal script
+### 内部脚本
 
-The internal script can be written in the _head_ or the _body_, but it is preferred to put it on the body of the HTML document.
-First, let us write on the head part of the page.
+内部脚本可以放置在_head_或者_body_中。但是一般建议将它放在HTML文档的body中。首先我们先将它放置在页面的head部分：
 
 ```html
 <!DOCTYPE html>
@@ -296,7 +297,7 @@ First, let us write on the head part of the page.
   </html>
 ```
 
-This is how we write the internal script most of the time. Writing the JavaScript code in the body section is the most preferred place. Open the browser console to see the output from the console.log()
+在body部分中编写JavaScript代码是最可取的地方。接下来我们来看下我们大部分情况下编写内部脚本的方式:
 
 ```html
 <!DOCTYPE html>
@@ -313,14 +314,14 @@ This is how we write the internal script most of the time. Writing the JavaScrip
   </html>
 ```
 
-Open the browser console to see the output from the console.log()
+打开浏览器控制台可以看到console.log（）的输出。
+
 
 ![js code from vscode](./images/js_code_vscode.png)
 
 ### External script
 
-Similar to the internal script, the external script link can be on the header or body, but it is preferred to put it in the body.
-First, we should create an external JavaScript file with .js extension. Any JavaScript file ends with .js. Create a file introduction.js inside your project directory and write the following code and link this .js file at the bottom of the body.
+和内部脚本类似，外部脚本可以放在head或者body，一般推荐放在body。我们首先创建一个使用.js结尾的外部JavaScript文件。在这里我们将在项目目录中创建一个introduction.js 然后在body的最后通过如下代码将js文件链接进来。
 
 ```js
 console.log('Welcome to 30DaysOfJavaScript')
@@ -340,7 +341,7 @@ External scripts in the head
     </html>
 ```
 
-External scripts in the body
+将外部脚本放置在body中的例子：
 
 ```html
 <!DOCTYPE html>
@@ -356,12 +357,9 @@ External scripts in the body
     </html>
 ```
 
-Open the browser console to see the output from the console.log()
+### 多外部脚本
 
-### Multiple External scripts
-
-We can link multiple external JavaScript files to a web page.
-Create a helloworld.js file inside the 30DaysOfJS folder and write the following code.
+我们可以链接多个外部JavaScript文件到一个网页中。接下来我们在项目文件夹中创建一个helloworld.js文件，并添加如下代码。
 
 ```js
 console.log('Hello, World!')
@@ -381,7 +379,7 @@ console.log('Hello, World!')
   </html>
 ```
 
-Your main.js file should be below all other scripts. Watch out your exercise needs to understand this line.
+大家在练习的时候需要注意一点：你们的main.js文件应该放在其他外部脚本的最后面。
 
 ![Multiple Script](./images/multiple_script.png)
 
