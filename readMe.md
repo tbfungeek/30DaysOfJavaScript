@@ -141,7 +141,7 @@ Ctl+Shift+I
 
 ##### Console.log
 
-我们首先使用一个内置的方法 **console.log()**来编写我们的第一个JavaScript代码。我们传递一个参数作为输入数据，然后 **console.log()** 方法显示输出结果。下面的例子中我们传递'Hello, World' 作为输入数据或者console.log()的参数。
+我们首先使用一个内置的方法 **console.log()** 来编写我们的第一个JavaScript代码。我们传递一个参数作为输入数据，然后 **console.log()** 方法显示输出结果。下面的例子中我们传递'Hello, World' 作为输入数据或者console.log()的参数。
 
 ```js
 console.log('Hello, World!')
@@ -159,13 +159,13 @@ console.log('HAPPY', 'NEW', 'YEAR', 2020)
 console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
 ```
 
-正如上面的代码片段所示， *console.log()* 可以携带多个参数。 恭喜你，已经学会用*console.log()*写你的第一行JavaScript代码了。
+正如上面的代码片段所示， *console.log()* 可以携带多个参数。 恭喜你，已经学会用 *console.log()* 写你的第一行JavaScript代码了。
 
 ##### 注释
 
 注释对于提高代码的可读性有很大帮助，JavaScript不会执行代码的注释部分，在JavaScript中，任何使用//开头或者被/* */包裹的内容都会被作为代码注释。
 
-** 例子: 单行注释**
+**例子: 单行注释**
 
  // This is the first comment  
  // This is the second comment  
@@ -207,7 +207,7 @@ console.log(`Hello, World!`)
 
 #### 运算
 
-接下来让我们使用*console.log()*在google chrome 终端中编写更多的JavaScript代码。除了输出文本之外我们还可以使用JavaScript来做算术运算。让我们来尝试做下面的简单计算。
+接下来让我们使用 *console.log()* 在google chrome 终端中编写更多的JavaScript代码。除了输出文本之外我们还可以使用JavaScript来做算术运算。让我们来尝试做下面的简单计算。
 
 
 ![Arithmetic](images/arithmetic.png)
