@@ -385,20 +385,21 @@ console.log('Hello, World!')
 
 ## Introduction to Data types
 
-In JavaScript and also other programming languages, there are different kinds of data types. The following are JavaScript primitive data types:_String, Number, Boolean, undefined, Null_, and _Symbol_.
+在JavaScript和其他编程语言中都存在不同类型都数据类型，下面是JavaScript的元数据类型：_String, Number, Boolean, undefined, Null_, 以及 _Symbol_
 
 ### Number
 
-- Integer: Integer(negative, zero and positive) numbers
+- 整型: 正数，负数，和零
         Example:
         ... -3, -2, -1, 0, 1, 2, 3 ...
-- Float: Decimal number
+- 浮点数: 十进制数
         Example
         ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
 
 ### String
 
-A collection of one or more characters under a single quote, double-quote, or backtick.
+用单引号，双引号或者反引号括起来的一个或者多个字符。
+
 **Example:**
 
 ```js
@@ -412,9 +413,7 @@ A collection of one or more characters under a single quote, double-quote, or ba
 
 ### Booleans
 
-A boolean value is either true or false. Any comparisons return a boolean value, which is either true or false.
-
-A boolean data type is either a True or False value.
+布尔值的值要么是true要么是false。任何比较都会返回一个要么是true要么是false的布尔值。
 
 **Example:**
 
@@ -425,7 +424,7 @@ A boolean data type is either a True or False value.
 
 ### Undefined
 
-In JavaScript, if we don't assign a value to a variable, the value is undefined. In addition to that, if a function is not returning anything, it returns undefined.
+在JavaScript中如果我们没有给某个值赋值，这时候的这个值为undefined，如果某个方法没有返回任何值那么它返回的是undefined
 
 ```js
 let firstName;
@@ -434,15 +433,16 @@ console.log(firstName); //not defined, because it is not assigned to a value yet
 
 ### Null
 
-Null in JavaScript means an empty value.
+Null 在 JavaScript 中意味着它是一个空值
 
 ```js
 let emptyValue = null
 ```
 
-## Checking Data types
+## 检查数据类型
 
-To check the data type of a certain data type, we use the **typeof** operator. See the following example.
+如果要检查某个数据的类型，我们可以使用 **typeof** 操作符，具体见下面例子：
+
 
 ```js
 console.log(typeof 'Asabeneh') // string
@@ -452,13 +452,14 @@ console.log(typeof null)       // object type
 console.log(typeof undefined)  // undefined
 ```
 
-## Comments
+## 注释
 
-Commenting in JavaScript is similar to other programming languages. Comments are important in making your make code more readable.
-There are two ways of commenting:
+和其他语言一样JavaScript中的注释主要是为了提高代码的可读性。JavaScript中有两种注释方式：
 
-- _Single line commenting_
-- _Multiline commenting_
+- _单行注释_
+- _多行注释_
+
+单行注释:
 
 ```js
 // commenting the code itself with a single comment
@@ -466,7 +467,7 @@ There are two ways of commenting:
 // let lastName = 'Yetayeh'; single line comment
 ```
 
-Multiline commenting:
+多行注释:
 
 ```js
 /*
@@ -477,19 +478,19 @@ Multiline commenting:
     */
 ```
 
-## Variables
+## 变量
 
-Variables are _containers_ of data. Variables used to _store_ data in a memory location. When a variable is declared, a memory location is reserved. When a variable is assigned to a value (data), the memory space will be filled with that data. To declare a variable, we use _var_, _let_, or _const_ keywords. We will talk more about var, let, and const in detail in other sections (scope). For now, the above explanation is enough.
+变量是在内存中用于存放数据的容器，当变量声明的时候将会开辟对应的内存空间。当给变量分配给一个值，这个内存空间将会被这个数据给填充。我们可以使用_var_, _let_, 或者 _const_ 声明一个变量。我们将会在其他章节详细介绍 _var_, _let_,  _const_，但是就目前而言，上面的说明已经足够了。
 
-For a variable that changes at a different time, we use _let_. If the data does not change at all, we use _const_. For example, PI, country name, gravity do no change, and we can use *const*.
+对于在不同时候变量的值会随时变化的情况，可以使用 _let_，如果数据完全不会变化（比如 PI值，国家名称，重力加速度）我们可以使用 _const_。
 
-- A JavaScript variable name  should not begin with a number.
-- A JavaScript variable name does not allow special characters except dollar sign and underscore.
-- A JavaScript variable name follows a camelCase convention.
-- A JavaScript variable name should not have space between words.
+- JavaScript 变量名不能以数字开头
+- JavaScript 变量名不允许除了下划线和美元符号以外的特殊字符
+- JavaScript 变量名遵循驼峰命名规则
+- JavaScript 变量名的字符之间不能使用空格分割
 
-The following are valid examples of JavaScript variables.
-Valid variables in JavaScript:
+下面是合法的JavaScript变量名：
+
 
 ```js
     firstName
@@ -513,8 +514,10 @@ Valid variables in JavaScript:
     year_2020
 ```
 
-camelCase or the first way of declaring is conventional in JavaScript. In this material, we will use camelCase variables.
-Invalid variable:
+驼峰命名规则或第一种声明方法是JavaScript中的常规方法。在本文中我们将使用驼峰命名规则命名变量。
+
+下面是无效的变量命名：
+
 
 ```sh
   first-name
@@ -522,17 +525,18 @@ Invalid variable:
   num_#_1
 ```
 
-Let us declare variables with different data types. To declare a variable, we need to use let or const keyword before the variable name. Following the variable name, we write an equal sign (assignment operator), and a value.
+接下来让我们试着使用不同的数据类型来声明变量。为了声明一个变量，我们需要使用let或者const关键字来定义类型。
 
 ```js
   # Syntax
   let nameOfVariable = value  
 ```
 
-**Examples: Variables**
+**例子: 变量**
 
 ```js
-// Declaring different variables of different data types
+
+// 声明不同数据类型的数据变量
 let firstName = 'Asabeneh' // first name of a person
 let lastName = 'Yetayeh' // last name of a person
 let country = 'Finland' // country
@@ -548,7 +552,7 @@ Asabeneh Yetayeh Finland Helsinki 100 True
 ```
 
 ```js
-// Declaring variables with number values
+// 使用数值类型声明变量
 let age = 100             // age in years
 const gravity = 9.81      // earth gravity  in m/s2
 const boilingPoint = 100  // water boiling point, temperature in oC
@@ -562,7 +566,7 @@ console.log(gravity, boilingPoint, PI)
 ```
 
 ```js
-// Variables can also be declaring in one line separated by comma
+可以在单行声明多个变量
 let name = 'Asabeneh', // name of a person
   job = 'teacher',
   live = 'Finland';
@@ -573,26 +577,28 @@ console.log(name, job, live);
 Asabeneh teacher Finland
 ```
 
-When you run the files on 01-Day folder you should get this:
+当你运行01-Day文件夹下的文件，你将会得到如下结果。
 
 ![Day one](./images/day_1.png)
 
 🌕  You are amazing. You have just completed day 1 challenge and you are in your way to greatness. Now do some exercises for your brain and for your muscle.
 
+你真厉害! 你刚刚完成了第一天的挑战，并且你正处于越来越优秀的道路上。接下来我们借助下面的练习，来做进一步熟悉。
+
 # 💻 Day 1: Exercises
 
-1. Write a single line comment which says, _comments can make code readable_
-2. Write another single comment which says, *welcome to 30DaysOfJavaScript*
-3. Write a multiline comment which says, _comments can make code readable, easy to use_
-   _and informative_
+1. 写一个内容为 _comments can make code readable_ 的单行注释
+2. 接着写一个内容为 *welcome to 30DaysOfJavaScript* 的单行注释
+3. 写一个内容为 _comments can make code readable, easy to use_
+   _and informative_ 的多行注释
 
-4. Create a variable.js file and declare variables and assign string, boolean, undefined and null data types
-5. Create datatypes.js file and use the JavaScript ***typeof*** operator to check different data types. Check the data type of each variable
-6. Declare four variables without assigning values
-7. Declare four variables with assigning values
-8. Declare variables to store your first name, last name, marital status, country and age in multiple lines
-9. Declare variables to store your first name, last name, marital status, country and age in a single line
-10. Declare two variables _myAge_ and _yourAge_ and assign them initial values and log to the browser console.
+4. 创建一个 variable.js 文件并声明 string, boolean, undefined 和 null 数据类型
+5. 创建一个 datatypes.js 文件，并使用 ***typeof*** 操作来检查数据的类型。
+6. 声明四个没有赋值的变量
+7. 声明四个带赋值的变量
+8. 在多行声明用于存储你的first name, last name, 婚姻状态, 国家， 年龄的变量
+9. 在单行声明用于存储你的first name, last name, 婚姻状态, 国家， 年龄的变量
+10. 声明 _myAge_ 和 _yourAge_ 并给它赋初值，并在浏览器的console中输出
 
    ```sh
    I am 25 years old.
