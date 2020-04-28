@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of JavaScript</h1>
+  <h1> JavaScript 30天挑战</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -7,7 +7,7 @@
   <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/asabeneh?style=social">
   </a>
 
-  <sub>Author:
+  <sub>作者:
   <a href="https://www.linkedin.com/in/asabeneh/" target="_blank">Asabeneh Yetayeh</a><br>
   <small> January, 2020</small>
   </sub>
@@ -16,33 +16,33 @@
 
 [<< Day 1](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/readMe.md) | [Day 3 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/03_Day/03_booleans_operators_date.md)
 
-![Thirty Days Of JavaScript](../images/banners/day_1_2.png)
+![JavaScript 30天挑战](../images/banners/day_1_2.png)
 
-- [📔 Day 2](#%f0%9f%93%94-day-2)
-  - [Data types](#data-types)
-    - [Primitive Data Types](#primitive-data-types)
-    - [Non-Primitive Data Types](#non-primitive-data-types)
+- [📔 第二天](#%f0%9f%93%94-day-2)
+  - [数据类型](#data-types)
+    - [元数据类型](#primitive-data-types)
+    - [非元数据类型](#non-primitive-data-types)
   - [Numbers](#numbers)
-    - [Declaring number data types](#declaring-number-data-types)
-    - [Math Object](#math-object)
-      - [Random number generator](#random-number-generator)
+    - [声明number数据类型](#declaring-number-data-types)
+    - [Math 对象](#math-object)
+      - [随机数生成器](#random-number-generator)
   - [Strings](#strings)
-    - [String Concatenation](#string-concatenation)
-      - [Concatenating using addition operator](#concatenating-using-addition-operator)
-      - [Long Literal Strings](#long-literal-strings)
-      - [Escape Sequences in string](#escape-sequences-in-string)
-      - [Template Literals(Template Strings)](#template-literalstemplate-strings)
-    - [String Methods](#string-methods)
-  - [Checking Data types and Casting](#checking-data-types-and-casting)
-    - [Checking data types](#checking-data-types)
-    - [Changing data type(Casting)](#changing-data-typecasting)
-      - [String to Int](#string-to-int)
-      - [String to Float](#string-to-float)
-      - [Float to Int](#float-to-int)
-  - [💻 Day 2: Exercises](#%f0%9f%92%bb-day-2-exercises)
-    - [Exercise: Level 1](#exercise-level-1)
-    - [Exercise: Level 2](#exercise-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+    - [拼接字符串](#string-concatenation)
+      - [使用加号拼接字符串](#concatenating-using-addition-operator)
+      - [长字符串](#long-literal-strings)
+      - [字符串中的转义字符](#escape-sequences-in-string)
+      - [模版字符串](#template-literalstemplate-strings)
+    - [String 方法](#string-methods)
+  - [检查和类型转换](#checking-data-types-and-casting)
+    - [检查数据类型](#checking-data-types)
+    - [转换数据类型](#changing-data-typecasting)
+      - [String 转 Int](#string-to-int)
+      - [String 转 Float](#string-to-float)
+      - [Float 转 Int](#float-to-int)
+  - [💻 第二天练习](#%f0%9f%92%bb-day-2-exercises)
+    - [训练题: Level 1](#exercise-level-1)
+    - [训练题: Level 2](#exercise-level-2)
+    - [训练题: Level 3](#exercises-level-3)
 
 # 📔 Day 2
 
