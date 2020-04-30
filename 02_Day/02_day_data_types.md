@@ -165,10 +165,9 @@ console.log(userOne == userTwo)  // true
 
 ## Numbers
 
-Numbers are integers and decimal values which can do all the arithmetic operations.
-Lets' see some examples of Numbers.
+Numbers 是可以用于进行算术运算的整形数值，我们来看下一些Numbers的例子：
 
-### Declaring number data types
+### 声明number数据类型：
 
 ```js
 let age = 35
@@ -183,57 +182,55 @@ const bodyTemp = 37      // oC average human body temperature, which is a consta
 console.log(age, gravity, mass, PI, boilingPoint, bodyTemp)
 ```
 
-### Math Object
+### Math 对象
 
-In JavaScript the Math Object provides a lots of methods to work with numbers.
+JavaScript中的Math对象提供了许多作用于numbers的方法。
 
 ```js
-const PI = Math.PI
 
+// 圆周率常量 PI 
+const PI = Math.PI 
 console.log(PI)                           // 3.141592653589793
 
-// Rounding to the closest number
+// 四舍五入方法: round
 // if above .5 up if less 0.5 down rounding
-
 console.log(Math.round(PI))               // 3 to round values to the nearest number
-
 console.log(Math.round(9.81))             // 10
 
+//向下舍去
 console.log(Math.floor(PI))               // 3 rounding down
-
+//向上取舍
 console.log(Math.ceil(PI))                // 4 rounding up
-
+//最小值
 console.log(Math.min(-5, 3, 20, 4,5, 10)) // -5, returns the minimum value
-
+//最大值
 console.log(Math.max(-5, 3, 20, 4,5, 10)) // 20, returns the maximum value
 
+//随机数
 const randNum = Math.random() // creates random number between 0 to 0.999999
 console.log(randNum)
-
 // Let us  create random number between 0 to 10
-
 const num = Math.floor(Math.random () * 11) // creates random number between 0 and 10
 console.log(num)
 
-//Absolute value
+//绝对值
 console.log(Math.abs(-10))      //10
 
-//Square root
+//开方
 console.log(Math.sqrt(100))     // 10
-
 console.log(Math.sqrt(2))      //1.4142135623730951
 
-// Power
+//平方
 console.log(Math.pow(3, 2)) // 9
 
-console.log(Math.E) // 2.718
 
+console.log(Math.E) // 2.718
 // Logarithm
 //Returns the natural logarithm of base E of x, Math.log(x)
 console.log(Math.log(2))    // 0.6931471805599453
 console.log(Math.log(10))   // 2.302585092994046
 
-// Trigonometry
+// 三角函数
 Math.sin(0)
 Math.sin(60)
 
@@ -241,15 +238,15 @@ Math.cos(0)
 Math.cos(60)
 ```
 
-#### Random number generator
+#### 随机数生成器
 
-The JavaScript Math Object has a random() method number generator which generates number from 0 to 0.999999999...
+JavaScript Math对象提供了random()方法用于生成0 到 0.999999999...的随机数。
 
 ```js
 let randomNum = Math.random() // generates 0 to 0.999
 ```
 
-Now, let us see how we can use random() method to generate a random number between 0 and 10 inclusive.
+现在让我们看下如何使用random()方法产生0 and 10的随机数
 
 ```js
 let randomNum = Math.random()         // generates 0 to 0.999
@@ -261,10 +258,9 @@ let randomNumRoundToFloor = Math.floor(numBtnZeroAndTen)
 console.log(randomNumRoundToFloor)    // this gives between 0 and 10
 ```
 
-## Strings
+## 字符串
 
-Strings are texts, which are under **_single_** or **_double_** quote. To declare a string, we need a variable name, assignment operator, a value under a single quote, double-quote, or backtick.
-Lets' see some examples of string:
+字符串在单引号或者双引号括起来的文本。为了声明一个字符串我们需要一个变量名。赋值操作符，一个用单引号双引号或者反引号括起来的数值。接下来我们来看下string的例子。
 
 ```js
 let space = ' '           // an empty space string
@@ -276,9 +272,9 @@ let language = 'JavaScript'
 let job = 'teacher'
 ```
 
-### String Concatenation
+### 字符串连接
 
-Connect two or more strings together is called concatenation.
+连接两个或者两个以上的字符称为字符连接。
 
 ```js
 // Declaring different variables of different data types
@@ -300,11 +296,12 @@ console.log(fullName);
 Asabeneh Yetayeh
 ```
 
-We can concatenate string in different ways.
+我们可以以不同方式连接字符串：
 
-#### Concatenating using addition operator
+#### 使用加号连接
 
-Concatenating using the addition operator is an old way. This way of concatenating is tedious and error-prone. It is good to know how to concatenate this way, but I strongly suggest to use the second way.
+使用加号连接字符串是一种比较老的方法。这种方式繁琐且容易出错,我们需要知道如何以这种方式进行连接，但是我强烈建议以第二种方式来连接。
+
 
 ```js
 // Declaring different variables of different data types
@@ -327,9 +324,10 @@ console.log(personInfoOne)
 Asabeneh Yetayeh. I am 250. I live in Finland
 ```
 
-#### Long Literal Strings
+#### 长字串
 
-A string could be a single character or paragraph or a page. If the string length is too big it does not fit in one line. We can use the backslash character (\\) at the end of each line to indicate that the string will continue on the next line.
+string可以是一个单字符串或者段落甚至一页字符。如果string的长度过长，不能在一行内显示下，这种情况我们可以通过在每行的结尾添加反斜杠来暗示string将会延续到下一行。
+
 **Example:**
 
 ```js
@@ -344,9 +342,10 @@ I hope you are enjoying too."
 console.log(paragraph)
 ```
 
-#### Escape Sequences in string
+#### 转义字符
 
-In JavaScript and other programming language \ followed by some characters is  an escape sequence. Let's see the most common escape characters:
+JavaScript和其他的编程语言用 \ + 一些字符 表示转义字符。我们来看下下面比较常见的转义字符：
+
 
 - \n: new line
 - \t: Tab means(8 spaces)
@@ -367,9 +366,9 @@ console.log("In every programming language it starts with \'Hello, World!\'")
 console.log('The saying \'Seeing is Believing\' is\'t correct in 2020')
 ```
 
-#### Template Literals(Template Strings)
+#### 模板字符串
 
-To create a template string, we use two backticks. We can inject data as expression inside a template string. To inject data, we enclose the expression with a curly bracket({}) followed by a $ sign. See the syntax below.
+要创建模板字符串，我们需要两个反引号。我们可以将数据作为表达式插入模板字符串中。要注入数据，我们用大括号（{}）加上$符号将表达式括起来。请参见下面的语法。
 
 ```js
 //Syntax
@@ -409,7 +408,7 @@ I am Asabeneh Yetayeh. I am 250. I live in Finland.
 I am Asabeneh Yetayeh. I live in Helsinki, Finland. I am a teacher. I teach JavaScript.
 ```
 
-Using a string template or string interpolation method, we can add expression, which could be a value or some operations(comparison, arithmetic operations, ternary operation).
+使用字符串模板或字符串插值方法，我们可以添加表达式，该表达式可以是值或某些运算（比较，算术运算，三进制运算）。
 
 ```js
 let a = 2
@@ -421,11 +420,12 @@ console.log(`${a} is greater than ${b}: ${a > b}`)
 2 is greater than 3: false
 ```
 
-### String Methods
+### String 方法
 
-Everything in JavaScript is an object. A string is a primitive data type that means we can not modify once it is created. The string object has many string methods. There are different string methods that can help us to work with strings.
+在JavaScript中一切皆对象，string是一个元数据类型。意味着一旦被创建它就不能被修改。string对象有许多方法可以供我们使用。
 
-1. *length*: The string *length* method returns the number of characters in a string included empty space.
+1. *length*: string 的 *length* 方法将会返回字符串的长度.
+
   **Example:**
 
    ```js
@@ -435,11 +435,11 @@ Everything in JavaScript is an object. A string is a primitive data type that me
    console.log(firstName.length)  // 8
    ```
 
-2. *Accessing characters in a string*: We can access each character in a string using its index. In programming, counting starts from 0. The first index of the string is zero, and the last index is one minus the length of the string.
+2. *访问string的字符*: 我们可以使用字符在字符串中的索引值来访问一个字符。字符串中以0作为字符串的开始，length - 1 作为字符串结尾的索引。
+
 
   ![Accessing sting by index](../images/string_indexes.png)
   
-Let us access different characters in 'JavaScript' string.
 
 ```js
 let string = 'JavaScript'
@@ -459,7 +459,7 @@ console.log(lastIndex)  // 9
 console.log(string[lastIndex])    // t
 ```
 
-1. *toUpperCase()*: this method changes the string to uppercase letters.
+1. *toUpperCase()*: 这个方法将字符串转换成大写
 
 ```js
 let string = 'JavaScript'
@@ -475,7 +475,7 @@ let country = 'Finland'
 console.log(country.toUpperCase())    // FINLAND
 ```
 
-4. *toLowerCase()*: this method changes the string to lowercase letters.
+4. *toLowerCase()*: 这个方法可以将字符串转换成小写字符。
 
 ```js
 let string = 'JavasCript'
@@ -491,7 +491,7 @@ let country = 'Finland'
 console.log(country.toLowerCase())   // finland
 ```
 
-5. *substr()*: It takes two arguments, the starting index and number of characters to slice.
+5. *substr()*: 这个方法有两个参数第一个参数为起始索引，第二个参数表示要截取的字符长度。
 
 ```js
 let string = 'JavaScript'
@@ -501,7 +501,8 @@ let country = 'Finland'
 console.log(country.substr(3, 4))   // land
 ```
 
-6. *substring()*: It takes two arguments, the starting index and the stopping index but it doesn't include the stopping index.
+6. *substring()*: 它包含两个参数，开始字符索引和结束字符索引。它不包括结束索引那个字符。
+
 
 ```js
 let string = 'JavaScript'
@@ -517,7 +518,7 @@ console.log(country.substring(3, 7))   // land
 console.log(country.substring(3))      // land
 ```
 
-7. *split()*: The split method splits a string at a specified place.
+7. *split()*: 在指定的位置分割字符串
 
 ```js
 let string = '30 Days Of JavaScript'
@@ -536,7 +537,7 @@ console.log(countries.split(','))  // ["Finland", " Sweden", " Norway", " Denmar
 console.log(countries.split(', ')) //  ["Finland", "Sweden", "Norway", "Denmark", "and Iceland"]
 ```
 
-8. *trim()*: Removes trailing space in the beginning or the end of a string.
+8. *trim()*: 移除字符串开始和结尾的空字符串。
 
 ```js
 let string = '   30 Days Of JavaScript   '
@@ -557,7 +558,7 @@ console.log(firstName.trim())
 Asabeneh
 ```
 
-9. *includes()*: It takes a substring argument and it check if substring argument exists in the string. *includes()* returns a boolean. It checks if a substring exist in a string and it returns true if it exists and false if it doesn't exist.
+9. *includes()*: *includes()*返回一个bool值，但有包含某个字符串的时候将会返回true，在没有包含字符串的时候返回false。
 
 ```js
 let string = '30 Days Of JavaScript'
@@ -577,7 +578,7 @@ console.log(country.includes('land'))    // true
 console.log(country.includes('Land'))    // false
 ```
 
-10. *replace()*: takes to parameter the old substring and new substring.
+10. *replace()*: 使用旧字符串替换掉新字符串
 
 ```js
 string.replace(oldsubstring, newsubstring)
@@ -591,7 +592,7 @@ let country = 'Finland'
 console.log(country.replace('Fin', 'Noman'))       // Nomanland
 ```
 
-11. *charAt()*: Takes index and it returns the value at that index
+11. *charAt()*: 传入index返回在指定index的值
 
 ```js
 string.charAt(index)
@@ -605,7 +606,7 @@ let lastIndex = string.length - 1
 console.log(string.charAt(lastIndex)) // t
 ```
 
-12. *charCodeAt()*: Takes index and it returns char code(ASCII number) of the value at that index
+12. *charCodeAt()*: 传入index返回在指定index的ASCII编码
 
 ```js
 string.charCodeAt(index)
@@ -620,7 +621,7 @@ console.log(string.charCodeAt(lastIndex)) // t ASCII is 116
 
 ```
 
-1.  *indexOf()*: Takes a substring and if the substring exists in a string it returns the first position of the substring if does not exist it returns -1
+1.  *indexOf()*: 传入一个子字符串，如果字符串包含这个子字符串，那么将会返回字符串在string中的第一个位置。如果不存在将会返回-1
 
 ```js
 string.indexOf(substring)
@@ -638,7 +639,7 @@ console.log(string.indexOf('Script'))     //15
 console.log(string.indexOf('script'))     // -1
 ```
 
-1.  *lastIndexOf()*: Takes a substring and if the substring exists in a string it returns the last position of the substring if it does not exist it returns -1
+1.  *lastIndexOf()*: 传入一个子字符串，如果这个子字符串在string中，将会返回substring在string中的最后index。如果不存在则返回 -1
 
 ```js
 //syntax
@@ -653,7 +654,8 @@ console.log(string.lastIndexOf('you'))        // 63
 console.log(string.lastIndexOf('JavaScript')) // 38
 ```
 
-15. *concat()*: it takes many substrings and creates concatenation.
+15. *concat()*: 它可以传入多个子字符串，并将这些字符串拼接起来。
+
 
 ```js
 string.concat(substring, substring, substring)
@@ -667,7 +669,7 @@ let country = 'Fin'
 console.log(country.concat("land")) // Finland
 ```
 
-16. *startsWith*: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+16. *startsWith*: 判断某个字符串是否以某个子字符串开始
 
 ```js
 //syntax
@@ -688,7 +690,7 @@ console.log(country.startsWith('fin'))   // false
 console.log(country.startsWith('land'))  //  false
 ```
 
-17. *endsWith*: it takes a substring as an argument and it checks if the string starts with that specified substring. It returns a boolean(true or false).
+17. *endsWith*: 判断一个字符串是否以某个字符串结尾
 
 ```js
 string.endsWith(substring)
@@ -708,7 +710,7 @@ console.log(country.endsWith('fin'))          // false
 console.log(country.endsWith('Fin'))          //  false
 ```
 
-18. *search*: it takes a substring as an argument and it returns the index of the first match.
+18. *search*: 传入一个参数，返回第一次出现的index
 
 ```js
 string.search(substring)
@@ -719,7 +721,7 @@ let string = 'I love JavaScript. If you do not love JavaScript what else can you
 console.log(string.search('love')) // 2
 ```
 
-19. *match*: it takes a substring or regular expression pattern as an argument and it returns an array if there is match if not it returns null. Let us see how a regular expression pattern looks like. It starts with / sign and ends with / sign.
+19. *match*: 它传入一个子字符串或者一个正则表达式作为一个参数，如果有匹配的则结果将会将这些结果放置在数组中返回。如果没匹配的则返回null。我们看下正则表达式长啥样。正则表达式以/开始并以/结束。
 
 ```js
 let string = 'love'
@@ -727,7 +729,7 @@ let patternOne = /love/     // with out any flag
 let patternTwo = /love/gi   // g-means to search in the whole text, i - case insensitive
 ```
 
-Match syntax
+匹配语法
 
 ```js
 // syntax
@@ -747,8 +749,7 @@ console.log(string.match('love'))
 let pattern = /love/gi
 console.log(string.match(pattern))   // ["love", "love", "love"]
 ```
-
-Let us extract numbers from text using regular expression. This is not regular expression section, no panic, we will cover regular expression in other section.
+让我们使用正则表达式从文本中提取数字。这不是介绍正则表达式的章节所以不用担心，我们将在其他部分介绍正则表达式。
 
 ```js
 let txt = 'In 2019, I run 30 Days of Python. Now, in 2020 I super exited to start this challenge'
@@ -762,7 +763,7 @@ console.log(txt.match(regEx))  // ["2", "0", "1", "9", "3", "0", "2", "0", "2", 
 console.log(txt.match(/\d+/g)) // ["2019", "30", "2020"]
 ```
 
-20.   *repeat()*: it takes a number argument and it returned the repeated version of the string.
+20.   *repeat()*: 它需要传入一个整形参数，返回string字符串的重复数据。
 
 ```js
 string.repeat(n)
@@ -773,11 +774,12 @@ let string = 'love'
 console.log(string.repeat(10)) // lovelovelovelovelovelovelovelovelovelove
 ```
 
-## Checking Data types and Casting
+## 检查数据类型和转换数据类型
 
-### Checking data types
+### 检查数据类型
 
-- Check Data types: To check the data type of a certain data type we use the _typeof_ and we also change one data type to another.
+- 检查数据类型: 要检查某个数据的数据类型，我们可以使用_typeof_。我们也可以将一个数据类型转换为另一个数据类型。
+
   **Example:**
 
 ```js
@@ -803,15 +805,13 @@ console.log(typeof undefined)   // undefined
 console.log(typeof null)        // object
 ```
 
-### Changing data type(Casting)
+### 转换数据类型
 
-- Casting: Converting one data type to another data type. We use _parseInt()_, _parseFloat()_, _Number()_, _+ sign_, _str()_
-  When we do arithmetic operations string numbers should be first converted to integer or float if not it returns an error.
+-  我们使用 _parseInt()_, _parseFloat()_,_Number()_, _+ sign_, _str()_ 来将某个数据转换为另一个数据类型。
 
-#### String to Int
+#### 字符串转换为Int
 
-We can convert string number to a number. Any number inside a quote is a string number.  An example of a string number: '10', '5', etc.
-We can convert string to number using the following methods:
+我们可以使用下面几种方法将字符串数据转换为整形：
 
 - parseInt()
 - Number()
@@ -837,10 +837,9 @@ let numInt = +num
 console.log(numInt) // 10
 ```
 
-#### String to Float
+#### String 转换为 Float
 
-We can convert string float number to a float number. Any  float number inside a quote is a string float number.  An example of a string float number: '9.81', '3.14', '1.44', etc.
-We can convert string float to number using the following methods:
+我可以使用如下方式将String转换为Float：
 
 - parseFloat()
 - Number()
@@ -867,10 +866,9 @@ let numFloat = +num
 console.log(numInt) // 9.81
 ```
 
-#### Float to Int
+#### Float 转换为 Int
 
-We can convert float numbers to integers.
-We use the following method to convert float to int:
+我们可以使用如下方式来将Float 转换为 Int
 
 - parseInt()
   
@@ -881,7 +879,8 @@ let numInt = parseInt(num)
 console.log(numInt) // 9
 ```
 
-🌕  You are awesome. You have just completed day 2 challenges and you are two steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.  
+🌕  你很厉害！你已经完成了第二天的挑战，现在我们来动手做些练习：
+
 
 ## 💻 Day 2: Exercises
 
