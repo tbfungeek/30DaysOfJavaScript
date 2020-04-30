@@ -14,7 +14,7 @@
 </div>
 </div>
 
-[<< Day 1](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/readMe.md) | [Day 3 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/03_Day/03_booleans_operators_date.md)
+[<< Day 1](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/readMe.md) | [Day 3 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/03_Day/03_booleans_operators_date.md)
 
 ![JavaScript 30天挑战](../images/banners/day_1_2.png)
 
@@ -964,4 +964,4 @@ console.log(numInt) // 9
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 1](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/readMe.md) | [Day 3 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/03_Day/03_booleans_operators_date.md)
+[<< Day 1](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/readMe.md) | [Day 3 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/03_Day/03_booleans_operators_date.md)

@@ -13,7 +13,7 @@
   </sub>
 </div>
 
-[第二天 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
+[第二天 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
 
 ![JavaScript30天挑战](./images/day_1_1.png)
 
@@ -607,4 +607,4 @@ Asabeneh teacher Finland
 
 🎉 CONGRATULATIONS ! 🎉
 
-[Day 2 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
+[Day 2 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md)
