@@ -917,27 +917,26 @@ console.log(numInt) // 9
 
 ### Exercise: Level 2
 
-1. Using console.log() print out the following statement.
+1. 使用 console.log() 输入如下句子.
 
     ```sh
     The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
     ```
 
-1. Using console.log() print out the following quote by Mother Teresa.
+1. 使用 console.log() 输入 Mother Teresa 的名言.
 
     ```sh
     "Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
     ```
 
-1. Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
-1. Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
-2. Check if 'on' is found in both python and jargon
-3. _I hope this course is not full of jargon_. Check if _jargon_ is in the sentence.
-4. Generate a random number between 0 and 100 inclusive.
-5. Generate a random number between 50 and 100 inclusive.
-6. Generate a random number between 0 and 255 inclusive.
-7. Access the 'JavaScript' string characters using a random number.
-8. Use console.log() and escape characters to print the following pattern.
+1. 检查'10'是否完全等于10，如果不相等则如何让它们两个相等。
+1. 检查 parseFloat('9.8') 是否等于 10 如果不相等如何让它们两个相等。
+2. 检查 'on' 是否在 python 和 jargon中同时出现
+3. 检查 _jargon_ 是否在 _I hope this course is not full of jargon_ 这个语句中出现。
+4. 生成介于50和100之间（含50和100）的随机数
+5. 生成介于0和255之间（含0和255）的随机数
+7. 使用随机数方法随机访问'JavaScript'字符串
+8. 使用 console.log()和转义字符输出如下段落
 
     ```js
     1 1 1 1 1
@@ -947,19 +946,21 @@ console.log(numInt) // 9
     5 1 5 25 125
     ```
 
-9.  Use __substr__ to slice out the phrase __because because because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
+9.  使用 __substr__ 从段落 __'You cannot end a sentence with because because because is a conjunction'__ 中截取 __because because because__
 
 ### Exercises: Level 3
 
-1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence.
-2. Use __match()__ to count the number all because's in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
-3. Clean the following text and find the most frequent word (hint, use replace and regular express).
+1. 计算 'Love is the best thing in this world. Some found their love and some are still looking for their love.' 这个字符串的词数量。
+2. 使用 __match()__ 计算 because 这个词在 __'You cannot end a sentence with because because because is a conjunction'__ 语句中出现的次数。
+
+3. 清理以下文本并找到最常用的单词（提示，使用替换和正则表达）
 
     ```js
         const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
     ```
 
-4. Calculate the total annual income of the person by extract the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+4. 通过从以下文本中提取数字来计算该人的年总收入。 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
 
 🎉 CONGRATULATIONS ! 🎉
 
