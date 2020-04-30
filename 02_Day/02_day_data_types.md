@@ -44,47 +44,51 @@
     - [训练题: Level 2](#exercise-level-2)
     - [训练题: Level 3](#exercises-level-3)
 
-# 📔 Day 2
+# 📔 第二天
 
-## Data types
+## 数据类型
 
-In the previous section, we mentioned a little bit about data types. Data or values have data types. Data types describe the characteristics of data. Data types can be divided into two
+在上一章节我们提到了一点关于数据类型的内容。数据或者值都有自己的数据类型，数据类型描述了数据的特征，它可以分成如下两类：
 
-1. Primitive data types
-2. Non-primitive data types(Object References)
+1. 元数据类型
+2. 非元数据类型
 
-### Primitive Data Types
+### 元数据类型
 
-Primitive data types in JavaScript includes:
+在JavaScript中元数据类型包括：
 
- 1. Numbers - Integers, floats
- 2. Strings - Any data under single or double quote
- 3. Booleans - true or false value
- 4. Null - empty value or no value
- 5. Undefined - a declared variable without a value
+ 1. Numbers - 整型，浮点姓类型
+ 2. Strings - 任何通过单引号或者双引号扩起来的内容
+ 3. Booleans - 用于存放true or false值的类型
+ 4. Null - 空值或者无数据
+ 5. Undefined - 未初始化的类型
 
-Non-primitive data types in JavaScript includes:
+在JavaScript中非元数据类型包括：
 
-1. Objects
-2. Functions
-3. Arrays
+1. Objects 对象
+2. Functions 方法
+3. Arrays 数组
 
-Now, let us see what exactly mean primitive and non-primitive data types.
-*Primitive* data types are immutable(non-modifiable) data types. Once a primitive data type is created we can not modify it.
+接下来我们看下元数据类型和非元数据类型的真正意义：
+
+*Primitive* 数据类型是不可变（不可修改）的。创建原始数据类型后，我们将无法修改
+
 **Example:**
 
 ```js
 let word = 'JavaScript'
 ```
 
-If we try to modify the string stored in variable *word*, JavaScript will raise an error. Any data type under a single quote, double-quote, or backtick is a string data type.
+任何在单引号，双引号或者反引号的数据都是字符串。如果我们想要修改存储在*word*变量的字符串，JavaScript将会抛出异常，
+
 
 ```js
 word[0] = 'Y'
 ```
 
-This expression does not change the string stored in the variable *word*. So, we can say that strings are not modifiable or immutable.
-Primitive data types are compared by its values. Let us compare different data values. See the example below:
+上面的表达式将不会修改*word*变量中的字符串，因此我们可以认为strings是不可以修改的。元类型数据是通过它的值来比较大小的。借下来我们看下元数据比较大小
+的例子：
+
 
 ```js
 let numOne = 3
@@ -103,10 +107,10 @@ let lightOff = false
 console.log(lightOn == lightOff) // false
 ```
 
-### Non-Primitive Data Types
+### 非元数据类型
 
-*Non-primitive* data types are modifiable or mutable. We can modify the value of non-primitive data types after it gets created.
-Let us see by creating an array. An array is a list of data values in a square bracket. Arrays can contain the same or different data types. Array values are referenced by their index. In JavaScript array index starts at zero. I.e., the first element of an array is found at index zero, the second element at index one, and the third element at index two, etc.
+*非元数据类型* 是可修改或可变的。我们可以在非元数据类型创建后对它进行修改。让我们通过创建一个数组来看下这个特性。数组是一个方括号包裹的一个数值列表。数组可以包含相同或者不同的数据类型。数组通过它的index来获得对象。在JavaScript中数组的序号从0开始。比如数组的第一个元素index为0，第二个元素index元素为1，第三个元素index为2.
+
 
 ```js
 let nums = [1, 2, 3]
@@ -115,7 +119,8 @@ nums[0] = 10
 console.log(nums)  // [10, 2, 3]
 ```
 
-As you can see, an array in which a non-primitive data type is mutable. Non-primitive data types can not be compared by value. Even if two non-primitive data types have the same properties and values, they are not strictly equal.
+正如下面所示，非元类型数据是可修改的，非元类型数据类型不能通过值的比较来比较大小。即使两个非元类型数据类型有相同的属性和值。他们也并非完全相等。
+
 
 ```js
 let nums = [1, 2, 3]
@@ -137,9 +142,7 @@ country:'Finland'
 
 console.log(userOne == userTwo) // false
 ```
-
-Rule of thumb, we do not compare non-primitive data types. Do not compare array, function, or object.
-Non-primitive values are referred to as reference types because they are being compared by reference instead of value. Two objects are only strictly equal if they refer to the same underlying object.
+一般而言，我们不直接比较数组，方法，或者对象这些非元类型数据，非元类型数据又称为引用类型，因为它们通过引用而不是值进行比较。只有在两个对象指向同一个对象的时候，这两个非元类型才完全相等。
 
 ```js
 let nums = [1, 2, 3]
@@ -158,7 +161,7 @@ let userTwo = userOne
 console.log(userOne == userTwo)  // true
 ```
 
-If you have a hard time understanding the difference between primitive data types and non-primitive data types, you are not the only one. Calm down and just go to the next section and try to come back after some time. Now let us start the data types by number type.
+如果你还难以理解元类型和非元类型，不要气馁你不是唯一有这种感觉的人。继续往下看，在后面再返回来看。接下来我们来看number数据类型。
 
 ## Numbers
 
