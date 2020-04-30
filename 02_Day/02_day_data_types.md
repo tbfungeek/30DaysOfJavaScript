@@ -886,31 +886,34 @@ console.log(numInt) // 9
 
 ### Exercise: Level 1
 
-1. Declare a variable name challenge and assign it to an initial value **'30 Days Of JavaScript'**.
-2. Print the string on the browser console using __console.log()__
-3. Print the __length__ of the string on the browser console using _console.log()_
-4. Change all the string to capital letters using __toUpperCase()__ method
-5. Change all the string to lowercase letters using __toLowerCase()__ method
-6. Cut(slice) out the first word of the string using __substr()__ or __substring()__ method
-7. Slice out the phrase *Days Of JavaScript* from *30 Days Of JavaScript*.
-8. Check if the string contains a word __Script__ using __includes()__ method
-9. Split the __string__ into __array__ using __split()__ method
-10. Split the string 30 Days Of JavaScript at the space using __split()__ method
-11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' __split__ the string at the comma and change it to an array.
-12. Change 30 Days Of JavaScript to 30 Days Of Python using __replace()__ method.
-13. What is character at index 15 in '30 Days Of JavaScript' string use __charAt()__ method.
-14. What is the character code of J in '30 Days Of JavaScript' string using __charCodeAt()__
-15. Use __indexOf__ to determine the position of the first occurrence of a in 30 Days Of JavaScript
-16. Use __lastIndexOf__ to determine the position of the last occurrence of a in 30 Days Of JavaScript.
-17. Use __indexOf__ to find the position of the first occurrence of the word __because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
-18. Use __lastIndexOf__ to find the position of the last occurrence of the word __because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
-19. Use __search__ to find the position of the first occurrence of the word __because__ in the following sentence:__'You cannot end a sentence with because because because is a conjunction'__
-20. Use __trim()__ to remove if there is trailing whitespace at the beginning and the end of a string.E.g ' 30 Days Of JavaScript '.
-21. Use __startsWith()__ method with the string *30 Days Of JavaScript* make the result true
-22. Use __endsWith()__ method with the string *30 Days Of JavaScript* make the result true
-23. Use __match()__ method to find all the a’s in 30 Days Of JavaScript
-24. Use __concat()__ and merge '30 Days of' and 'JavaScript' to a single string, '30 Days Of JavaScript'
-25. Use __repeat()__ method to print 30 Days Of JavaScript 2 times
+1. 声明一个变量名为challenge的变量，将**'30 Days Of JavaScript'**作为值赋值给它。
+2. 使用 __console.log()__ 将string输出到浏览器终端
+3. 使用 _console.log()_ 输出字符串的长度  __length__ 
+4. 使用 __toUpperCase()__ 将某个字符串的所有字符转换为大写字符
+5. 使用 __toLowerCase()__ 将某个字符串的所有字符转换为小写字符
+6. 使用 __substr()__ 或者 __substring()__ 来截取字符的第一个word
+7. 从*30 Days Of JavaScript*中截取 *Days Of JavaScript*
+8. 使用 __includes()__ 方法判断某个字符串是否包含 __Script__ 这个词
+9. 将某个字符串使用__split()__ 方法分割成数组
+10. 使用 __split()__ 方法将 _30 Days Of JavaScript_ 这个字符串以空格作为分隔符进行分割。
+11. 使用  __split__ 方法将 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'以逗号作为分割符，将它转换为数组
+12. 使用 __replace()__ 方法将 30 Days Of JavaScript 转换为 30 Days Of Python。
+13. 通过 __charAt()__ 来查看'30 Days Of JavaScript'字符串的第15个字符。
+14. 使用 __charCodeAt()__ 方法获得'30 Days Of JavaScript'字符串中的  J 的字符编码。
+15. 使用 __indexOf__ 方法确定 30 Days Of JavaScript 字符串中第一个 a 字符的位置。
+16. 使用 __lastIndexOf__ 方法确定 30 Days Of JavaScript 字符串中最后一个 a 字符的位置。
+17. 使用 __indexOf__ 来查找 __'You cannot end a sentence with because because because is a conjunction'__ 这个句子中出现的第一个 __because__ 词的位置。
+
+18. 使用 __lastIndexOf__ 来查找 __'You cannot end a sentence with because because because is a conjunction'__ 这个句子中出现的最后一个__because__ 词的位置。
+
+19. 使用 __search__ 来查找 __'You cannot end a sentence with because because because is a conjunction'__ 这个句子中出现的第一个 __because__ 词的位置。
+20. 使用 __trim()__ 来移除这个字符串中前后出现的空字符' 30 Days Of JavaScript '.
+
+21. 使用 __startsWith()__ 方法作用于字符串 * 30 Days Of JavaScript * 使结果为true
+22. 使用 __endsWith()__ 方法作用于字符串* 30 Days Of JavaScript *使结果为true
+23. 使用 __match()__ 方法找出 30 Days Of JavaScript 字符中的所有 a 字符
+24. 使用 __concat()__ 将 '30 Days of' 和 'JavaScript' 拼接为单个字符 - '30 Days Of JavaScript'
+25. 使用 __repeat()__ 输出连续的两个 30 Days Of JavaScript
 
 ### Exercise: Level 2
 
