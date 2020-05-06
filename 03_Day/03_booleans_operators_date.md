@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of JavaScript</h1>
+  <h1> JavaScript 30天挑战</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -13,51 +13,51 @@
   </sub>
 </div>
 
-[<< Day 2](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [Day 4 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
+[<< 第二天](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [第四天 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
 
-![Thirty Days Of JavaScript](../images/banners/day_1_3.png)
+![JavaScript 第三天挑战](../images/banners/day_1_3.png)
 
-- [📔 Day 3](#%f0%9f%93%94-day-3)
+- [📔 第三天](#%f0%9f%93%94-day-3)
   - [Booleans](#booleans)
-    - [Truthy values](#truthy-values)
-    - [Falsy values](#falsy-values)
+    - [True 值](#truthy-values)
+    - [False 值](#falsy-values)
   - [Undefined](#undefined)
   - [Null](#null)
-  - [Operators](#operators)
-    - [Assignment operators](#assignment-operators)
-    - [Arithmetic Operators](#arithmetic-operators)
-    - [Comparison Operators](#comparison-operators)
-    - [Logical Operators](#logical-operators)
-    - [Increment Operator](#increment-operator)
-    - [Decrement Operator](#decrement-operator)
-    - [Ternary Operators](#ternary-operators)
-    - [Operator Precendence](#operator-precendence)
-  - [Window Methods](#window-methods)
-    - [Window alert() method](#window-alert-method)
-    - [Window prompt() method](#window-prompt-method)
-    - [Window confirm() method](#window-confirm-method)
-  - [Date Object](#date-object)
-    - [Creating a time object](#creating-a-time-object)
-    - [Getting full year](#getting-full-year)
-    - [Getting month](#getting-month)
-    - [Getting date](#getting-date)
-    - [Getting day](#getting-day)
-    - [Getting hours](#getting-hours)
-    - [Getting minutes](#getting-minutes)
-    - [Getting seconds](#getting-seconds)
-    - [Getting time](#getting-time)
-  - [💻 Day 3: Exercises](#%f0%9f%92%bb-day-3-exercises)
-    - [Exercises: Level 1](#exercises-level-1)
-    - [Exercises: Level 2](#exercises-level-2)
-    - [Exercises: Level 3](#exercises-level-3)
+  - [操作符](#operators)
+    - [赋值操作符](#assignment-operators)
+    - [算术操作符](#arithmetic-operators)
+    - [比较操作符](#comparison-operators)
+    - [逻辑操作符](#logical-operators)
+    - [自增操作符](#increment-operator)
+    - [自减操作符](#decrement-operator)
+    - [三元操作符]](#ternary-operators)
+    - [符号优先级](#operator-precendence)
+  - [Window 方法](#window-methods)
+    - [Window alert() 方法](#window-alert-method)
+    - [Window prompt() 方法](#window-prompt-method)
+    - [Window confirm() 方法](#window-confirm-method)
+  - [Date 对象](#date-object)
+    - [创建 time 对象](#creating-a-time-object)
+    - [获取完整的年份](#getting-full-year)
+    - [获取月份](#getting-month)
+    - [获取date](#getting-date)
+    - [获取天](#getting-day)
+    - [获取小时](#getting-hours)
+    - [获取分钟](#getting-minutes)
+    - [获取秒](#getting-seconds)
+    - [获取time]](#getting-time)
+  - [💻 第三天练习](#%f0%9f%92%bb-day-3-exercises)
+    - [练习: 等级1](#exercises-level-1)
+    - [练习: 等级2](#exercises-level-2)
+    - [练习: 等级3](#exercises-level-3)
 
-# 📔 Day 3
+# 📔 第三天
 
 ## Booleans
 
-A boolean data type represents one of the two values:_true_ or _false_. Boolean value is either true or false. The use of these data types will be clear when you start the comparison operator. Any comparisons return a boolean value which is either true or false.
+boolean 代表一个包含 _true_ 或者 _false_ 两种可能值的数据类型。在进行比较操作的时候使用这些操作符号会让逻辑变得更清晰。任何比较都会返回一个布尔值，该布尔值可以为true或false。
 
-**Example: Boolean Values**
+**练习: Boolean 值**
 
 ```js
 let isLightOn = true
@@ -68,29 +68,26 @@ let truValue = 4 > 3    // true
 let falseValue = 4 < 3  // false
 ```
 
-We agreed that boolean values are either true or false.
+### True 值
 
-### Truthy values
+- 除了zero之外的所有numbers数据都是True
+- 所有的string类型都是True
+- 值为True的变量
 
-- All numbers(positive and negative) are truthy except zero
-- All strings are truthy
-- The boolean true
-
-### Falsy values
+### False 值
 
 - 0
 - 0n
 - null
 - undefined
 - NaN
-- the boolean false
-- '', "", ``, empty string
+- false 布尔值
+- '', "", ``, 空字符
 
-It is good to remember those truthy values and falsy values. In later section, we will use them with conditions to make decision.
 
 ## Undefined
 
-If we declare a variable and if we do not assign a value, the value will be undefined. In addition to this, if a function is not returning the value will be undefined.
+如果我们声明了一个变量，在我们未给它赋值之前它的值是undefined。在一个方法没有返回值的情况下它的返回值被认为是undefined
 
 ```js
 let firstName
@@ -104,31 +101,28 @@ let empty = null
 console.log(empty) // -> null , means no value
 ```
 
-## Operators
+## 操作符
 
-### Assignment operators
+### 赋值操作符
 
-An equal sign in JavaScript is an assignment operator. It uses to assign a variable.
+在JavaScript中等号属于赋值符号，它用于将一个值赋给一个变量。
 
 ```js
 let firstName = 'Asabeneh'
 let country = 'Finland'
 ```
 
-Assignment Operators
+### 算术操作符
 
-![Assignment operators](../images/assignment_operators.png)
+算术操作符是一系列数学符号
 
-### Arithmetic Operators
 
-Arithmetic operators are mathematical operators.
-
-- Addition(+): a + b
-- Subtraction(-): a - b
-- Multiplication(*): a * b
-- Division(/): a / b
-- Modulus(%): a % b
-- Exponential(**): a ** b
+- 加号(+): a + b
+- 减号(-): a - b
+- 乘号(*): a * b
+- 除号(/): a / b
+- 去余数(%): a % b
+- 指数覆盖(**): a ** b
 
 ```js
 let numOne = 4
@@ -172,12 +166,12 @@ console.log(
 )
 ```
 
-### Comparison Operators
+### 比较操作符
 
-In programming we compare values, we use comparison operators to compare two values. We check if a value is greater or less or equal to other value.
+在代码中我们一般会遇到比较数值大小的情况，这种情况下我们使用比较操作符来比较某个数值是大于，小于还是等于另一个数值。
 
 ![Comparison Operators](../images/comparison_operators.png)
-**Example: Comparison Operators**
+**例子: 比较操作符**
 
 ```js
 console.log(3 > 2)              // true, because 3 is greater than 2
@@ -215,10 +209,9 @@ console.log('tomato'.length == 'potato'.length)  // true
 console.log('python'.length > 'dragon'.length)   // false
 ```
 
-Try to understand the above comparisons with some logic. Remember without any logic might be difficult.
-JavaScript is some how a wired kind of programming language. JavaScript code run and give you a result but unless you are good at it may not be the desired result.
+尝试通过上面的逻辑理解上述的比较操作符，不通过任何逻辑只是干巴巴强行记忆可能会比较难以理解。JavaScript在某种意义上是一种宽泛数据类型的编程语言。但是除非我们非常擅长，否则可能返回并非我们期望的结果。
 
-As rule of thumb, if a value is not true with == it will not be equal with ===. Using === is safer than using ==. The following [link](https://dorey.github.io/JavaScript-Equality-Table/) has an exhaustive list of comparison of data types.
+根据以往经验，如果==的值不为true，则===的值也不应该相等。使用===比使用==更安全。以下[link]（https://dorey.github.io/JavaScript-Equality-Table/）具有数据类型比较的详尽列表。
 
 ### Logical Operators
 
