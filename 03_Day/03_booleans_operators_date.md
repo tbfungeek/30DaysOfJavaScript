@@ -211,15 +211,12 @@ console.log('python'.length > 'dragon'.length)   // false
 
 尝试通过上面的逻辑理解上述的比较操作符，不通过任何逻辑只是干巴巴强行记忆可能会比较难以理解。JavaScript在某种意义上是一种宽泛数据类型的编程语言。但是除非我们非常擅长，否则可能返回并非我们期望的结果。
 
-根据以往经验，如果==的值不为true，则===的值也不应该相等。使用===比使用==更安全。以下[link]（https://dorey.github.io/JavaScript-Equality-Table/）具有数据类型比较的详尽列表。
+根据以往经验，如果==的值不为true，则===的值也不应该相等。使用===比使用==更安全。以下
+[link](https://dorey.github.io/JavaScript-Equality-Table/)具有数据类型比较的详尽列表。
 
-### Logical Operators
+### 逻辑操作符
 
-The following symbols are the common logical operators:
-&&(ampersand) , ||(pipe) and !(negation).
-&& gets true only if the two operands are true.
-|| gets true either of the operand is true.
-! negates true to false, false to true.
+下面是一些常见的逻辑操作符：&&(与) , ||(或) and !(非). && 只有在两边操作数都是真的时候才返回真. || 在一个操作数为真的时候就会返回真。! 会在操作数为真的时候返回false，操作数为false的时候返回true。
 
 ```js
 //&& ampersand operator example
@@ -243,11 +240,11 @@ let isLightOff = !isLightOn  // false
 let isMarried = !false       // true
 ```
 
-### Increment Operator
+### 自增操作符
 
-In JavaScrip we use the increment operator to increase a value stored in a variable. The increment could be pre or post increment. Let us see each of them:
+JavaScrip中我们使用自增操作符来对存储在一个变量中的数值进行加1操作。自增操作符号又可分成前缀自增和后缀自增。我们借下来来看下它们的用法：
 
-1. Pre-increment
+1. 前置自增
 
 ```js
 let count = 0
@@ -255,7 +252,7 @@ console.log(++count) // 1
 console.log(count)   // 1
 ```
 
-1. Post-increment
+1. 后置自增
 
 ```js
 let count = 0
@@ -263,13 +260,13 @@ console.log(count++) // 0
 console.log(count)  // 1
 ```
 
-We use most of the time post-increment. At leas you should remember how to use post-increment operator.
+我们用得最多的是后置自增，你至少需要知道如何使用后置自增操作符。
 
-### Decrement Operator
+### 自减操作符
 
-In JavaScrip we use the decrement operator to decrease a value stored in a variable. The decrement could be pre or post decrement. Let us see each of them:
+JavaScrip中我们使用自减操作符来对存储在一个变量中的数值进行减1操作。自减操作符号又可分成前缀自减和后缀自减。我们借下来来看下它们的用法：
 
-1. Pre-decrement
+1. 前置自减
 
 ```js
 let count = 0
@@ -277,7 +274,7 @@ console.log(--count) // -1
 console.log(count)  // -1
 ```
 
-2. Post-decrement
+1. 后置自减
 
 ```js
 let count = 0
@@ -285,10 +282,10 @@ console.log(count--) // 0
 console.log(count)   // -1
 ```
 
-### Ternary Operators
+### 三目运算符
 
-Ternary operator allows to write a condition.
-Another way to write conditionals is using ternary operators. Look at the following examples:
+可以使用三目运算符来编写一个条件语句。大家可以看下如下例子来看下怎么使用三目运算符:
+
 
 ```js
 let isRaining = true
@@ -324,15 +321,17 @@ number > 0
 -5 is a negative number
 ```
 
-### Operator Precendence
+### 操作符优先级
 
-I would like to recommend you to read about operator precendence from this [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+关于操作符优先级部分这里推荐大家阅读下面的文档：
 
-## Window Methods
+[link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 
-### Window alert() method
+## Window 方法
 
-As you have seen at very beginning alert() method displays an alert box with a specified message and an OK button. It is a builtin method and it takes on argument.
+### Window alert() 方法
+
+如你刚开始看到的那样，alert()方法显示一个带有指定消息和OK按钮的警报框。这是一个内置方法，它带有参数。
 
 ```js
 alert(message)
@@ -342,11 +341,11 @@ alert(message)
 alert('Welcome to 30DaysOfJavaScript')
 ```
 
-Do not use too much alert because it is destructing and annoying, use it just for to test.
+不要使用过多的警报，因为它会带给用户烦人的感觉，最好仅将其用于测试。
 
-### Window prompt() method
+### Window prompt() 方法
 
-The window prompt methods display a prompt box with an input on your browser to take input values and the input data can be stored in a variable. The prompt() method takes two arguments. The second argument is optional.
+window prompt方法会在浏览器上显示一个带有输入的提示框，以获取输入值，并且输入数据可以存储在变量中。
 
 ```js
 prompt('required text', 'optional text')
@@ -357,67 +356,64 @@ let number = prompt('Enter number', 'number goes here')
 console.log(number)
 ```
 
-### Window confirm() method
+### Window confirm() 方法
 
-The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.
-A confirm box is often used to ask permission from a user to do something. Window confirm() takes an string as an argument.
-Clicking the OK yields true value, clicking the Cancel button yields false value.
+Confirm()方法会显示一个对话框，其中包含指定的消息以及“确定”和“取消”按钮。确认框通常用于请求用户许可以执行某项操作。窗口confirm（）将字符串作为参数。单击“确定”将产生真值，单击“取消”按钮将产生假值。
 
 ```js
 const agree = confirm('Are you sure you like to delete? ')
 console.log(agree) // result will be true or false based on what you click on the dialog box
 ```
 
-These are not all the window methods we will have a separate section to go deep into window methods.
+上述部分并非全部的window方法。我们会在接下来的章节中进一步深入介绍window 方法
 
-## Date Object
+## Date 对象
 
-Time is an important thing. We like to know the time a certain activity or event. In JavaScript current time and date is created using JavaScript Date Object. The object we create using Date object provides many methods to work with date and time.The methods we use to get date and time information from a date object values are started with a word _get_ because it provide the information.
+时间是一个十分重要的东西，我们可能需要知道某个活动或者事件的时期，在JavaScript 当前时间和日期是通过JavaScript对象创建的。我们通过Date类创建的对象提供了许多方法来操作日期和时间。我们用于获取时间和日期信息的方法一般以 _get_开头。 
 _getFullYear(), getMonths(), getDate(), getDay(), getHours(), getMinutes, getSeconds(), getMilliseconds(), getTime(), getDay()_
-
 ![Date time Object](../images/date_time_object.png)
 
-### Creating a time object
+### 创建一个时间对象
 
-Once we create time object. The time object will provide information about time. Let us create a time object
+一旦我们创建了时间对象，时间对象将会提供关于时间的信息，接下来让我们创建一个时间对象：
 
 ```js
 const now = new Date()
 console.log(now) // Sat Jan 04 2020 00:56:41 GMT+0200 (Eastern European Standard Time)
 ```
 
-We have created a time object and we can access any date time information from the object using the get methods we have mentioned on the table.
+我们已经创建了一个时间对象，我们可以通过我们上面表格提到的方法来访问时间信息。
 
-### Getting full year
+### 获取完整的年份
 
-Let's extract or get the full from a time object.
+我们试着从一个时间对象中抽取完整的年份信息。
 
 ```js
 const now = new Date()
 console.log(now.getFullYear()) // 2020
 ```
 
-### Getting month
+### 获取月份信息
 
-Let's extract or get the month from a time object.
+我们试着从一个时间对象中抽取完整的月份信息。
 
 ```js
 const now = new Date()
 console.log(now.getMonth()) // 0, because the month is January,  month(0-11)
 ```
 
-### Getting date
+### 获取日期信息
 
-Let's extract or get the date of the month from a time object.
+让我们试着从一个时间对象获取日期信息。
 
 ```js
 const now = new Date()
 console.log(now.getDate()) // 4, because the day of the month is 4th,  day(0-31)
 ```
 
-### Getting day
+### 获取天数信息
 
-Let's extract or get the day of the week from a time object.
+让我们试着从一个时间对象获取一周中的第几天信息。
 
 ```js
 const now = new Date()
@@ -425,45 +421,46 @@ console.log(now.getDay()) // 6, because the day is Saturday which is the 5th day
 // Getting the weekday as a number (0-6)
 ```
 
-### Getting hours
+### 获取小时信息
 
-Let's extract or get the hours from a time object.
+让我们试着从一个时间对象获取小时信息。
 
 ```js
 const now = new Date()
 console.log(now.getHours()) // 0, because the time is 00:56:41
 ```
 
-### Getting minutes
+### 获取分钟信息
 
-Let's extract or get the minutes from a time object.
+让我们试着从一个时间对象获取分钟信息。
 
 ```js
 const now = new Date()
 console.log(now.getMinutes()) // 56, because the time is 00:56:41
 ```
 
-### Getting seconds
+### 获取秒信息
 
-Let's extract or get the seconds from a time object.
+让我们试着从一个时间对象获取秒信息。
 
 ```js
 const now = new Date()
 console.log(now.getSeconds()) // 41, because the time is 00:56:41
 ```
 
-### Getting time
+### 获取 time 信息
 
-This method give time in milliseconds starting from January 1, 1970. It is also know as Unix time. We can get the unix time in two ways:
+这个方法将会给出距离1970年1月1日的毫秒数，同时它也是一个Unix时间。我们可以以如下几种方式获得unix时间。
 
-1. Using _getTime()_
+
+1. 通过 _getTime()_
 
 ```js
 const now = new Date() //
 console.log(now.getTime()) // 1578092201341, this is the number of seconds passed from January 1, 1970 to January 4, 2020 00:56:41
 ```
 
-1. Using _Date.now()_
+1. 通过 _Date.now()_
 
 ```js
 const allSeconds = Date.now() //
@@ -473,7 +470,8 @@ const timeInSeconds = new Date().getTime()
 console.log(allSeconds == timeInSeconds) // true
 ```
 
-Let us format these values to a human readable time format.
+接下来我们就可以将时间格式化为可读的形式。
+
 **Example:**
 
 ```js
@@ -487,9 +485,7 @@ const minutes = now.getMinutes() // return number (0 -59)
 console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
 ```
 
-🌕 You have boundless energy. You have just completed day 3 challenges and you are three steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
-
-## 💻 Day 3: Exercises
+## 💻 第三天练习
 
 ### Exercises: Level 1
 
