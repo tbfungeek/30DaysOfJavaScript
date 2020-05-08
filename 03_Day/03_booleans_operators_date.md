@@ -13,7 +13,7 @@
   </sub>
 </div>
 
-[<< 第二天](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [第四天 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
+[<< 第二天](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [第四天 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
 
 ![JavaScript 第三天挑战](../images/banners/day_1_3.png)
 
@@ -619,4 +619,4 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
 
 🎉 CONGRATULATIONS ! 🎉
 
-[<< Day 2](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [Day 4 >>](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
+[<< Day 2](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/02_Day/02_day_data_types.md) | [Day 4 >>](https://github.com/tbfungeek/30DaysOfJavaScript/blob/master/04_Day/04_day_conditionals.md)
