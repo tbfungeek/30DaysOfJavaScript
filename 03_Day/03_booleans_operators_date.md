@@ -489,14 +489,14 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
 
 ### Exercises: Level 1
 
-1. Declare firstName, lastName, country, city, age, isMarried, year variable and assign value to it and use the typeof operator to check different data types.
-2. Check if type of '10' is equal to 10
-3. Check if parseInt('9.8') is equal to 10
-4. Boolean value is either true or false.
-   1. Write three JavaScript statement which provide truthy value.
-   2. Write three JavaScript statement which provide falsy value.
+1. 声明firstName, lastName, country, city, age, isMarried, year 变量，并给它赋值，然后使用typeof操作检查这些变量的不同数据类型。
+2. 检查‘10’是否等于10
+3. 检查parseInt('9.8')的值是否等于10
+4. Boolean的值要么是True要么是False
+   1. 编写三个提供True值的JavaScript语句。
+   2. 编写三个提供False值的JavaScript语句。
 
-5. Figure out the result of the following comparison expression first without using console.log(). After you decide the result confirm it using console.log()
+5. 指出下面比较语句的结果，刚开始的时候先不使用console.log()，在你确定结果后可以使用console.log()来验证你的结果。
    1. 4 > 3
    2. 4 >= 3
    3. 4 < 3
@@ -508,9 +508,9 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    9. 4 != '4'
    10. 4 == '4'
    11. 4 === '4'
-   12. Find the length of python and jargon and make a falsy comparison statement.
+   12. 找出python和jargon的长度，并做一个错误的比较语句
 
-6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+6. 指出下面比较语句的结果，刚开始的时候先不使用console.log()，在你确定结果后可以使用console.log()来验证你的结果。
    1. 4 > 3 && 10 < 12
    2. 4 > 3 && 10 > 12
    3. 4 > 3 || 10 < 12
@@ -523,18 +523,18 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    10. !(4 === '4')
    11. There is no 'on' in both dragon and python
 
-7. Use the Date object to do the following activities
-   1. What is the year today?
-   2. What is the month today as a number?
-   3. What is the date today?
-   4. What is the day today as a number?
-   5. What is the hours now?
-   6. What is the minutes now?
-   7. Find out the numbers of seconds elapsed from January 1, 1970 to now.
+7. 使用Date来完成下面任务
+   1. 今天的年份?
+   2. 今天的月份?
+   3. 今天的星期?
+   4. 今天的日期?
+   5. 当前小时?
+   6. 当前分钟?
+   7. 指出1970 1月1日 到现在的秒数。
 
 ### Exercises: Level 2
 
-1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+1. 编写一个脚本，提示用户输入三角形的底部和高度，并计算三角形的面积（面积=0.5 x b x h）
 
    ```sh
    Enter base: 20
@@ -542,7 +542,7 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    The area of the triangle is 50
    ```
 
-1. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c)
+1. 编写一个脚本，提示用户输入三角形的a、b和c边，并计算三角形的周长（周长=a+b+c）
 
    ```sh
    Enter side a: 5
@@ -551,13 +551,14 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    The perimeter of the triangle is 12
    ```
 
-1. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width))
-1. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-1. Calculate the slope, x-intercept and y-intercept of y = 2x -2
-1. Slope is (m = y2-y1/x2-x1). Find the slope between point (2, 2) and point(6,10)
-1. Compare the slope of above two questions.
-1. Calculate the value of y (y = x^2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
-1. Writ a script that prompt a user to enters hours and rate per hour. Calculate pay of the person?
+1. 使用prompt获取长度和宽度，并计算矩形的面积（面积=长度x宽度和矩形的周长（周长=2 x（长度+宽度）
+
+1. 使用prompt获取半径，并计算圆的面积（面积=πx r x r）和圆的周长（c=2 xπx r），其中π=3.14。
+1. 计算y=2x-2的斜率、x-截距和y-截距
+1. 坡度为（m=y2-y1/x2-x1）。找出点（2，2）和点（6，10）之间的斜率
+1. 比较以上两个问题的斜率。
+1. 尝试使用不同的x值计算y的值（y=x^2+6x+9）。并计算出y=0的时候x的值。
+1. 编写一个脚本，提示用户输入小时数和每小时费率。计算那个人的工资？
 
     ```sh
     Enter hours: 40
@@ -565,8 +566,8 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
     Your weekly earning is 1120
     ```
 
-1. If the length of your name is greater than 7 say, your name is long else say your name is short.
-1. Compare your first name length and your family name length and you should get this output.
+1. 如果你的名字长度大于7，就认为你的名字长，否则就认为你的名字短。
+1. 比较您的名字长度和姓氏长度。
 
     ```js
     let firstName = 'Asabeneh'
@@ -577,7 +578,7 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
     Your first name, Asabeneh is longer than your family name, Yetayeh
     ```
 
-1. Declare two variables _myAge_ and _yourAge_ and assign them initial values and myAge and yourAge.
+1. 声明两个变量 _myage_ 和 _yourage_ 并指定它们的初始值。
 
    ```js
    let myAge = 250
@@ -588,7 +589,7 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    I am 225 years older than you.
    ```
 
-1. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+1. 使用prompt获取用户出生的年份，如果用户是18岁或18岁以上，否则告诉用户需要在等待一定时间才能驾驶。
 
     ```sh
 
@@ -599,22 +600,22 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
     You are 15. You will be allowed to drive after 3 years.
     ```
 
-1. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
+1. 编写一个脚本，提示用户输入年数。在假设每个人活一百年的情况下，计算一个人能活的秒数。
 
    ```sh
    Enter number of yours you live: 100
    You lived 3153600000 seconds.
    ```
 
-1. Create a human readable time format using the Date time object
+1. 使用日期时间对象创建人类可读的时间格式
    1. YYY-MM-DD HH:mm
    2. DD-MM-YYYY HH:mm
    3. DD/MM/YYY HH:mm
 
 ### Exercises: Level 3
 
-1. Create a human readable time format using the Date time object. The hour and the minute should be all time two digits(7 hours should be 07 and 5 minutes should be 05 )
-   1. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
+1. 使用日期时间对象创建人类可读的时间格式。小时和分钟应始终为两位数（7小时应为07，5分钟应为05）
+  1. YYY-MM-DD时：分例如2012-01-02 07:05
 
 🎉 CONGRATULATIONS ! 🎉
 
