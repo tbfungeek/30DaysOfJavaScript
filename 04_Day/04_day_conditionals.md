@@ -1,5 +1,5 @@
 <div align="center">
-  <h1> 30 Days Of JavaScript</h1>
+  <h1> JavaScript 30天挑战 </h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -17,39 +17,40 @@
 
 ![Thirty Days Of JavaScript](../images/banners/day_1_4.png)
 
-- [📔 Day 4](#%f0%9f%93%94-day-4)
-  - [Conditionals](#conditionals)
+- [📔 第四天](#%f0%9f%93%94-day-4)
+  - [条件语句]](#conditionals)
     - [if](#if)
     - [if else](#if-else)
     - [if else if else](#if-else-if-else)
     - [Switch](#switch)
-    - [Ternary Operators](#ternary-operators)
+    - [三目操作符]](#ternary-operators)
   - [💻 Exercises](#%f0%9f%92%bb-exercises)
     - [Exercises: Level 1](#exercises-level-1)
     - [Exercises: Level 2](#exercises-level-2)
     - [Exercises: Level 3](#exercises-level-3)
 
-# 📔 Day 4
+# 📔 第四天
 
-## Conditionals
+## 条件语句
 
-Conditional statements are used to decision based on different conditions.
-By default , statements in JavaScript script executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two ways:
+默认情况下JavaScript中的语句从上到下按照顺序依次执行。如果处理逻辑需要基于不同的条件做出不同的决定则可以通过两种方式更改顺序执行流：
 
-- Conditional execution: a block of one or more statements will be executed if a certain expression is true
-- Repetitive execution: a block of one or more statements will be repetitively executed as long as a certain expression is true. In this section, we will cover _if_, _else_ , _else if_ statements. The comparison and logical operator we learned in the previous sections will be useful in here.
+- 条件表达式: 在某个表达式为true的情况下包含一个或者多个语句的某个语句块将会被执行。
+- 循环表达式: 只要某个表达式为true，包含一个或者多个语句的某个语句块将会被重复执行。
 
-Conditions can be implementing using the following ways:
+在这部分我们将会介绍 _if_, _else_ , _else if_ 语句。前面介绍的比较和逻辑操作符在这部分介绍中会起到帮助。
+
+条件语句可以通过如下的方式实现：
 
 - if
 - if else
 - if else if else
 - switch
-- ternary operator
+- 三元运算符
 
 ### if
 
-In JavaScript and other programming languages the key word _if_ use to check if a condition is true and to execute the block code. To create an if condition, we need _if_ keyword, condition inside a parenthesis and block of code inside a curly bracket({}).
+在JavaScript和其他编程语言中，_if_ 关键字用于确定某个条件是否为true并执行对应的代码。要创建if条件，我们需要有if关键字，用括号扩起来的条件语句和花括号（{}）扩起来的代码块。
 
 ```js
 // syntax
@@ -75,11 +76,13 @@ if (isRaining) {
 }
 ```
 
-As you can see in the above condition, 3 is greater than 0 and it is a positive number. The condition was true and the block code was executed. However, if the condition is false, we do not see a result. The same goes for the second condition, if isRaining is false the if block will not be executed and we do not see an output. In order to see the result of the falsy condition, we should have another block, which is going to be _else_.
+正如你所见的上面例子，3大于0 所以条件是true。对应的block将会被执行。但是如果条件语句为false，我们将看不到任何的结果输出。第二个例子也是同样道理。isRaining如果为false，对应的block也不会输出结果。为了看到条件语句值为false时候的执行效果可以使用 _else_ 关键字。
 
 ### if else
 
 If condition is true the first block will be executed, if not the else condition will be executed.
+
+如果条件为true则第一个block将会执行，如果不为true就会执行else对应的block。
 
 ```js
 // syntax
